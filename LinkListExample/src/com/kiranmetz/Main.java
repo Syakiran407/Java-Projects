@@ -9,6 +9,8 @@ public class Main {
 	// write your code here
         LinkedList<String> myList = new LinkedList<String>();
 
+        myList.add("0");
+
         Scanner scanner = new Scanner(System.in); //take user input
 
         System.out.println("Please type anything: ");
