@@ -6,6 +6,12 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Encrypt();
+        Decrypt();
+
+    }
+
+    public static void Encrypt() {
         int n = 5;
 
         // Creating an empty LinkedList
@@ -15,10 +21,9 @@ public class Main {
 
         System.out.println("Enter your message here: ");
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             list.add(scanner.nextLine());
         }
-
 
         // Displaying the list
         System.out.println("List of your message: " + list);
@@ -30,18 +35,15 @@ public class Main {
 
         System.out.println("Full Message: " + message);
 
-        char [] chars = message.toCharArray();
+        char[] chars = message.toCharArray();
         System.out.println("Here is your encrypted keys: ");
-        for(char c: chars){
+        for (char c : chars) {
             c += 5;
             System.out.print(c);
         }
-
-        Decrypt();
-
     }
 
-    public static void Decrypt(){
+    public static void Decrypt() {
         String message;
         int key = 5;
 
@@ -55,10 +57,11 @@ public class Main {
         char[] chars = message.toCharArray();
 
         System.out.println("Your Decrypted Message is: ");
-        for (char c: chars) {
+        for (char c : chars) {
             c -= key;
             System.out.print(c);
         }
+
         System.out.println("");
     }
 }
