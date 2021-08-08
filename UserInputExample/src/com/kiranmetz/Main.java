@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
 
         int choice;
         System.out.println("Choose your number here: ");
@@ -21,18 +20,11 @@ public class Main {
 
     public static void capitals(int ch){
 
-        switch (ch){
-            case 1:
-                System.out.println("Malaysia");
-                break;
-            case 2:
-                System.out.println("Brunei");
-                break;
-            case 3:
-                System.out.println("Indonesia");
-                break;
-            default:
-                System.out.println("Invalid");
+        switch (ch) {
+            case 1 -> System.out.println("Malaysia");
+            case 2 -> System.out.println("Brunei");
+            case 3 -> System.out.println("Indonesia");
+            default -> System.out.println("Invalid");
         }
     }
 }
